@@ -309,7 +309,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Designing is left */}
+
             {/* Offered Programs */}
             <section className="container mx-auto">
                 <div>
