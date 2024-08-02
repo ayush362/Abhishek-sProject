@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const Navbar = () => {
     const currentPath = usePathname();
@@ -9,7 +10,13 @@ const Navbar = () => {
         <>
             <nav>
                 <div className="container mx-auto flex justify-center items-center gap-20">
-                    <img src="./logo.jpg" alt="logo" className="w-60" />
+                    <Image
+                        src="/logo.jpg"
+                        alt="logo"
+                        width={200}
+                        height={50}
+                        className=""
+                    />
                     <a
                         href="/"
                         className={

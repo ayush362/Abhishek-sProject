@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 const About = () => {
     return (
         // About section
@@ -17,10 +17,11 @@ const About = () => {
                         helps the children blossom to their potential.
                     </p>
                     <div className="mt-6">
-                        <img
-                            src="/path/to/elements-logo.png"
+                        <Image
+                            src="/logo.jpg"
                             alt="Elements Kids Logo"
-                            className="w-32"
+                            width={320}
+                            height={1000}
                         />
                     </div>
                 </div>

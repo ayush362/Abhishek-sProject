@@ -10,6 +10,7 @@ import { fadeImages } from "@/data/fadeImages";
 import { programs } from "@/data/programs";
 import { features } from "@/data/features";
 import { hoursDetails } from "@/data/hoursDetails";
+import Image from "next/image";
 const divStyle = {
     display: "flex",
     alignItems: "center",
@@ -27,9 +28,12 @@ export default function Home() {
                     <Fade>
                         {fadeImages.map((fadeImage, index) => (
                             <div key={index}>
-                                <img
+                                <Image
+                                    height={500}
+                                    width={1000}
                                     style={{ width: "100%", height: 500 }}
                                     src={fadeImage.url}
+                                    alt="image"
                                 />
                                 {/* <h2>{fadeImage.caption}</h2> */}
                             </div>
@@ -335,7 +339,12 @@ export default function Home() {
                                 </div>
                             </div>
                             <div>
-                                <img src="./logo.jpg" alt="" />
+                                <Image
+                                    src="/logo.jpg"
+                                    alt="images"
+                                    height={500}
+                                    width={500}
+                                />
                                 <button>Read More</button>
                             </div>
                         </div>
