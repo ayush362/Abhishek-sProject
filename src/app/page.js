@@ -1,113 +1,482 @@
-import Image from "next/image";
+"use client";
+import React from "react";
+import { Fade } from "react-slideshow-image";
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
+import "react-slideshow-image/dist/styles.css";
+import { contactDetails } from "@/data/contactDetails";
+import { slideImages } from "@/data/slideImages";
+import { fadeImages } from "@/data/fadeImages";
+import { programs } from "@/data/programs";
+import { features } from "@/data/features";
+import { hoursDetails } from "@/data/hoursDetails";
+const divStyle = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundSize: "cover",
+    height: "400px",
+};
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    return (
+        <>
+            {/* Image slider Section of the Home page */}
+            <section>
+                <div className="slide-container">
+                    <Fade>
+                        {fadeImages.map((fadeImage, index) => (
+                            <div key={index}>
+                                <img
+                                    style={{ width: "100%", height: 500 }}
+                                    src={fadeImage.url}
+                                />
+                                {/* <h2>{fadeImage.caption}</h2> */}
+                            </div>
+                        ))}
+                    </Fade>
+                </div>
+            </section>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+            {/* Learn More Section */}
+            <section className="bgOne text-white py-20">
+                <div className="container mx-auto flex justify-center items-center">
+                    <div className="w-2/3">
+                        <p className="text-4xl">
+                            Consistently among Top Preschools in India since
+                            2015 Outstanding Educator in Early Years in India -
+                            Dec 2020
+                        </p>
+                    </div>
+                    <div className="w-1/3">
+                        <a
+                            href="#"
+                            className="border-white border-2 p-5 hover:bg-white  hover:text-black"
+                        >
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </section>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+            {/* Elements kids section */}
+            <section className="container mx-auto py-10">
+                <h2 className="text-center text-5xl">
+                    Welcome to Elements Kids
+                </h2>
+                <div className="flex justify-center gap-10 py-10">
+                    <div className="slide-container w-1/3">
+                        <h2 className="text-center mb-5">Kasavahalli Center</h2>
+                        <div className="flex gap-5 justify-center items-center mb-5">
+                            <a
+                                href="#"
+                                className="bg-orange-600 text-white hover:bg-purple-700 rounded-2xl py-1 px-2"
+                            >
+                                SEE MAP{" "}
+                            </a>
+                            <a
+                                href="#"
+                                className="bg-orange-600 text-white hover:bg-purple-700 rounded-2xl py-1 px-2"
+                            >
+                                VIRTUAL TOUR
+                            </a>
+                        </div>
+                        <Slide>
+                            {slideImages.map((slideImage, index) => (
+                                <div key={index}>
+                                    <div
+                                        style={{
+                                            ...divStyle,
+                                            backgroundImage: `url(${slideImage.url})`,
+                                        }}
+                                        className="rounded-2xl"
+                                    ></div>
+                                </div>
+                            ))}
+                        </Slide>
+                    </div>
+                    <div className="slide-container w-1/3">
+                        <h2 className="text-center mb-5">
+                            Doddakanneli Center
+                        </h2>
+                        <div className="flex gap-5 justify-center items-center mb-5">
+                            <a
+                                href="#"
+                                className="bg-orange-600 text-white hover:bg-purple-700 rounded-2xl py-1 px-2"
+                            >
+                                SEE MAP{" "}
+                            </a>
+                            <a
+                                href="#"
+                                className="bg-orange-600 text-white hover:bg-purple-700 rounded-2xl py-1 px-2"
+                            >
+                                VIRTUAL TOUR
+                            </a>
+                        </div>
+                        <Slide>
+                            {slideImages.map((slideImage, index) => (
+                                <div key={index}>
+                                    <div
+                                        style={{
+                                            ...divStyle,
+                                            backgroundImage: `url(${slideImage.url})`,
+                                        }}
+                                        className="rounded-2xl"
+                                    ></div>
+                                </div>
+                            ))}
+                        </Slide>
+                    </div>
+                </div>
+            </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+            <section className="bgOne py-5">
+                <div className="flex gap-5 justify-center items-center">
+                    <a
+                        href="#"
+                        className="text-white bg-orange-600 hover:bg-purple-500 py-5 px-3"
+                    >
+                        BOOK VIRTUAL/CAMPUS APPOINTMENT
+                    </a>
+                    <a
+                        href="#"
+                        className="text-white bg-orange-600 hover:bg-purple-500 py-5 px-3"
+                    >
+                        BOOK VIRTUAL/CAMPUS APPOINTMENT
+                    </a>
+                </div>
+            </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+            {/* Enquiry Form */}
+            <section>
+                <div>
+                    <div className="text-center py-5">
+                        <h2 className="text-3xl">Enquiry Form</h2>
+                        <p className="mt-2 mb-5">
+                            Fill the form for any Queries
+                        </p>
+                        <form style={{ maxWidth: "600px", margin: "0 auto" }}>
+                            <div
+                                style={{
+                                    display: "flex",
+                                    justifyContent: "space-between",
+                                    marginBottom: "1rem",
+                                }}
+                            >
+                                <input
+                                    className="border border-gray-200"
+                                    type="text"
+                                    placeholder="Your Name *"
+                                    style={{ width: "48%", padding: "0.5rem" }}
+                                />
+                                <input
+                                    className="border border-gray-200"
+                                    type="text"
+                                    placeholder="Phone Number *"
+                                    style={{ width: "48%", padding: "0.5rem" }}
+                                />
+                            </div>
+                            <div
+                                style={{
+                                    display: "flex",
+                                    justifyContent: "space-between",
+                                    marginBottom: "1rem",
+                                }}
+                            >
+                                <input
+                                    className="border border-gray-200"
+                                    type="email"
+                                    placeholder="Your E-mail *"
+                                    style={{ width: "48%", padding: "0.5rem" }}
+                                />
+                                <input
+                                    className="border border-gray-200"
+                                    type="text"
+                                    placeholder="Subject"
+                                    style={{ width: "48%", padding: "0.5rem" }}
+                                />
+                            </div>
+                            <div style={{ marginBottom: "1rem" }}>
+                                <textarea
+                                    className="border border-gray-200"
+                                    placeholder="Your Message *"
+                                    style={{ width: "100%", padding: "0.5rem" }}
+                                    rows="4"
+                                ></textarea>
+                            </div>
+                            <button
+                                type="submit"
+                                className="hover:bg-purple-500 bg-orange-500 text-white border-none pointer p-5"
+                            >
+                                SEND MESSAGE
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+            {/* Our Programs */}
+            <section className="container mx-auto">
+                <div className="text-center py-12 bg-white">
+                    <h2 className="text-4xl font-bold text-gray-700">
+                        Our Programs
+                    </h2>
+                    <div className="flex flex-wrap justify-center mt-8">
+                        {programs.map((program, index) => (
+                            <div
+                                key={index}
+                                className="w-full md:w-1/4 p-4 flex flex-col justify-center items-center gap-4"
+                            >
+                                <div
+                                    className={`rounded-full ${program.color} text-white py-3 px-6 inline-block mb-4`}
+                                >
+                                    {program.title}
+                                </div>
+                                <div
+                                    className={`text-4xl ${program.color}  mb-2 w-20 rounded-full h-20 flex justify-center items-center`}
+                                >
+                                    {program.icon}
+                                </div>
+                                <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                                    {program.description}
+                                </h3>
+                                <p className="text-gray-500">
+                                    {program.details}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Philosophy section */}
+            <section className="container mx-auto py-10">
+                <h2 className="text-center text-5xl text-purple-800 mb-10">
+                    Elements Kids' Philosophy
+                </h2>
+                <div className="flex flex-col md:flex-row justify-around items-start md:items-center gap-10">
+                    <div className="flex flex-col items-center text-center">
+                        <div className="bg-orange-500 text-white rounded-full w-20 h-20 flex items-center justify-center mb-4 text-2xl">
+                            🕒
+                        </div>
+                        <h3 className="text-xl font-semibold text-purple-800 mb-2">
+                            Self-Respect
+                        </h3>
+                        <p className="text-gray-700">
+                            Throughout the various sessions in the classroom the
+                            children are treated with respect and understanding,
+                            which goes a long way in developing the required
+                            self confidence to negotiate oneself in life
+                            situations and in social and peer interactions.
+                        </p>
+                    </div>
+                    <div className="flex flex-col items-center text-center">
+                        <div className="bg-orange-500 text-white rounded-full w-20 h-20 flex items-center justify-center mb-4 text-2xl">
+                            📚
+                        </div>
+                        <h3 className="text-xl font-semibold text-purple-800 mb-2">
+                            Growth Oriented Environment
+                        </h3>
+                        <p className="text-gray-700">
+                            Children at Elements Kids follow a regimen which
+                            inculcates discipline in them while at the same time
+                            providing them with enough freedom of imagination
+                            and expression; freedom which is within the
+                            boundaries of discipline.
+                        </p>
+                    </div>
+                    <div className="flex flex-col items-center text-center">
+                        <div className="bg-orange-500 text-white rounded-full w-20 h-20 flex items-center justify-center mb-4 text-2xl">
+                            🧠
+                        </div>
+                        <h3 className="text-xl font-semibold text-purple-800 mb-2">
+                            Emotional Intelligence
+                        </h3>
+                        <p className="text-gray-700">
+                            Interactions across Pre-School, Day Care & Activity
+                            Club focus on developing emotionally intelligent
+                            children with the skill to identify, assess and
+                            control emotions of oneself, of others and of
+                            groups. It encompasses self-awareness,
+                            self-management, social awareness and relationship
+                            management.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Designing is left */}
+            {/* Offered Programs */}
+            <section className="container mx-auto">
+                <div>
+                    <h3>Programs Offered</h3>
+                    <p>
+                        We have dedicated programs which cater to the learning
+                        and care needs of children in the age group of 6 months
+                        to 12 years
+                    </p>
+                    <div className="grid grid-cols-2">
+                        <div className="bg-purple-500 flex justify-between">
+                            <div>
+                                <h3>Pre-Montessori</h3>
+                                <p>(Equivalent to playgroup)</p>
+                                <div>
+                                    <div>
+                                        <span>12</span>
+                                        <span>Class Size</span>
+                                        <span>6-8</span>
+                                        <span>Covid Class</span>
+                                        <span>Size</span>
+                                    </div>
+                                    <div>
+                                        <span>1.5 - 3</span>
+                                        <span>Years Old</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./logo.jpg" alt="" />
+                                <button>Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Tick mark section */}
+            <section className="bg-gray-50 py-10">
+                <div className="container mx-auto flex flex-col justify-center items-center">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                        {features
+                            .slice(0, Math.ceil(features.length / 2))
+                            .map((feature, index) => (
+                                <div key={index} className="space-y-4">
+                                    <div className="flex items-start">
+                                        <svg
+                                            className="h-6 w-6 text-orange-500 border border-orange-500 mr-2"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth="2"
+                                                d="M5 13l4 4L19 7"
+                                            ></path>
+                                        </svg>
+                                        <span className="text-gray-700">
+                                            {feature}
+                                        </span>
+                                    </div>
+                                </div>
+                            ))}
+                        {features
+                            .slice(Math.ceil(features.length / 2))
+                            .map((feature, index) => (
+                                <div
+                                    key={index + Math.ceil(features.length / 2)}
+                                    className="space-y-4"
+                                >
+                                    <div className="flex items-start">
+                                        <svg
+                                            className="h-6 w-6 text-orange-500 border border-orange-500 mr-2"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth="2"
+                                                d="M5 13l4 4L19 7"
+                                            ></path>
+                                        </svg>
+                                        <span className="text-gray-700">
+                                            {feature}
+                                        </span>
+                                    </div>
+                                </div>
+                            ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Contact Us */}
+            <section className="bg-gray-50 py-10">
+                <div className="container mx-auto text-center">
+                    <h2 className="text-3xl font-semibold text-purple-600">
+                        Bulletin Board
+                    </h2>
+                    <h3 className="text-xl font-light text-purple-500 mt-4">
+                        Contact Us
+                    </h3>
+                    <p className="text-sm text-gray-400 mb-10">
+                        (A unit of Elements Educare Private Limited)
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
+                        {contactDetails.map((detail, index) => (
+                            <div key={index} className="space-y-2 text-left">
+                                <div className="flex items-center justify-center md:justify-start mb-2">
+                                    {detail.icon}
+                                    <h4 className="ml-2 text-xl font-semibold text-purple-600">
+                                        {detail.title}
+                                    </h4>
+                                </div>
+                                <p className="text-gray-700">
+                                    {detail.address}
+                                </p>
+                                <p className="text-gray-700">
+                                    Email:{" "}
+                                    <a
+                                        href={`mailto:${detail.email}`}
+                                        className="text-purple-500 underline"
+                                    >
+                                        {detail.email}
+                                    </a>
+                                </p>
+                                <p className="text-gray-700">
+                                    Phone:{" "}
+                                    <a
+                                        href={`tel:${detail.phone}`}
+                                        className="text-purple-500 underline"
+                                    >
+                                        {detail.phone}
+                                    </a>
+                                </p>
+                                <p className="text-gray-700">
+                                    Map:{" "}
+                                    <a
+                                        href="#"
+                                        className="text-purple-500 underline"
+                                    >
+                                        {detail.map}
+                                    </a>
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
+                        {hoursDetails.map((detail, index) => (
+                            <div key={index} className="space-y-2 text-center">
+                                <div className="flex items-center justify-center mb-2">
+                                    {detail.icon}
+                                    <h4 className="ml-2 text-xl font-semibold text-purple-600">
+                                        {detail.title}
+                                    </h4>
+                                </div>
+                                <p className="text-gray-700 whitespace-pre-line">
+                                    {detail.details}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Footer */}
+        </>
+    );
 }
