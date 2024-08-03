@@ -30,9 +30,9 @@ export default function Home() {
                         {fadeImages.map((fadeImage, index) => (
                             <div key={index}>
                                 <Image
-                                    height={500}
+                                    height={600}
                                     width={1000}
-                                    style={{ width: "100%", height: 500 }}
+                                    style={{ width: "100%", height: 600 }}
                                     src={fadeImage.url}
                                     alt="image"
                                 />
@@ -42,7 +42,6 @@ export default function Home() {
                     </Fade>
                 </div>
             </section>
-
             {/* 2.Finished */}
             {/* Learn More Section */}
             <section className="bgOne text-white py-20 px-5">
@@ -64,7 +63,6 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
             {/* 3.completed */}
             {/* Elements kids section */}
             <section className="container mx-auto py-10">
@@ -136,7 +134,6 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
             {/* 4.completed */}
             <section className="bgOne p-5">
                 <div className="flex flex-col md:flex-row gap-5 justify-center items-center">
@@ -154,7 +151,6 @@ export default function Home() {
                     </a>
                 </div>
             </section>
-
             {/* 5.completed */}
             {/* Enquiry Form */}
             <section>
@@ -223,7 +219,6 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
             {/* 6.completed */}
             {/* Our Programs */}
             <section className="container mx-auto">
@@ -258,7 +253,6 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
             {/* 7.completed */}
             {/* Philosophy section */}
             <section className="container mx-auto py-10 px-5">
@@ -315,11 +309,11 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
+            {/* 8.Completed */}
             {/* Offered Programs */}
-            <section className="container mx-auto">
+            <section className="container mx-auto p-4">
                 <div>
-                    <h3 className="text-[#56509f] text-6xl text-center my-5">
+                    <h3 className="text-[#56509f] text-3xl sm:text-6xl text-center my-5">
                         Programs Offered
                     </h3>
                     <p className="text-center text-gray-400 my-5">
@@ -327,8 +321,8 @@ export default function Home() {
                         and care needs of children in the age group of 6 months
                         to 12 years
                     </p>
-                    <div className="grid grid-cols-2 gap-10">
-                        <div className="bg-[#56509f] flex p-4 rounded-lg shadow-lg text-white">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <div className="bg-[#56509f] flex flex-col md:flex-row p-4 rounded-lg shadow-lg text-white">
                             <div className="flex-1">
                                 <h3 className="text-xl font-bold mb-2">
                                     Pre-Montessori
@@ -358,12 +352,12 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="flex flex-col items-center justify-center">
+                            <div className="flex flex-col items-center justify-center mt-4 md:mt-0">
                                 <Image
                                     src="/logo.jpg"
                                     alt="images"
-                                    height={450}
-                                    width={450}
+                                    height={200}
+                                    width={200}
                                     className="rounded-full mb-4"
                                 />
                                 <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
@@ -371,7 +365,7 @@ export default function Home() {
                                 </button>
                             </div>
                         </div>
-                        <div className="bg-[#56509f] flex p-4 rounded-lg shadow-lg text-white">
+                        <div className="bg-[#56509f] flex flex-col md:flex-row p-4 rounded-lg shadow-lg text-white">
                             <div className="flex-1">
                                 <h3 className="text-xl font-bold mb-2">
                                     Pre-Montessori
@@ -401,20 +395,20 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="flex flex-col items-center justify-center">
+                            <div className="flex flex-col items-center justify-center mt-4 md:mt-0">
                                 <Image
                                     src="/logo.jpg"
                                     alt="images"
-                                    height={450}
-                                    width={450}
+                                    height={200}
+                                    width={200}
                                     className="rounded-full mb-4"
                                 />
                                 <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
                                     READ MORE
                                 </button>
                             </div>
-                        </div>{" "}
-                        <div className="bg-[#56509f] flex p-4 rounded-lg shadow-lg text-white">
+                        </div>
+                        <div className="bg-[#56509f] flex flex-col md:flex-row p-4 rounded-lg shadow-lg text-white">
                             <div className="flex-1">
                                 <h3 className="text-xl font-bold mb-2">
                                     Pre-Montessori
@@ -444,20 +438,20 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="flex flex-col items-center justify-center">
+                            <div className="flex flex-col items-center justify-center mt-4 md:mt-0">
                                 <Image
                                     src="/logo.jpg"
                                     alt="images"
-                                    height={450}
-                                    width={450}
+                                    height={200}
+                                    width={200}
                                     className="rounded-full mb-4"
                                 />
                                 <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
                                     READ MORE
                                 </button>
                             </div>
-                        </div>{" "}
-                        <div className="bg-[#56509f] flex p-4 rounded-lg shadow-lg text-white">
+                        </div>
+                        <div className="bg-[#56509f] flex flex-col md:flex-row p-4 rounded-lg shadow-lg text-white">
                             <div className="flex-1">
                                 <h3 className="text-xl font-bold mb-2">
                                     Pre-Montessori
@@ -487,20 +481,20 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="flex flex-col items-center justify-center">
+                            <div className="flex flex-col items-center justify-center mt-4 md:mt-0">
                                 <Image
                                     src="/logo.jpg"
                                     alt="images"
-                                    height={450}
-                                    width={450}
+                                    height={200}
+                                    width={200}
                                     className="rounded-full mb-4"
                                 />
                                 <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
                                     READ MORE
                                 </button>
                             </div>
-                        </div>{" "}
-                        <div className="bg-[#56509f]  col-span-2 flex justify-around items-center p-4 rounded-lg shadow-lg text-white">
+                        </div>
+                        <div className="bg-[#56509f] col-span-1 md:col-span-2 flex flex-col md:flex-row justify-around items-center p-4 rounded-lg shadow-lg text-white">
                             <div className="">
                                 <h3 className="text-xl font-bold mb-2">
                                     Pre-Montessori
@@ -530,12 +524,12 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="flex flex-col items-center justify-center">
+                            <div className="flex flex-col items-center justify-center mt-4 md:mt-0">
                                 <Image
                                     src="/logo.jpg"
                                     alt="images"
-                                    height={450}
-                                    width={450}
+                                    height={200}
+                                    width={200}
                                     className="rounded-full mb-4"
                                 />
                                 <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
@@ -546,7 +540,6 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
             {/* 9.completed */}
             {/* Tick mark section */}
             <section className="bg-gray-50 p-10">
@@ -609,24 +602,30 @@ export default function Home() {
                 </div>
             </section>
 
+            {/* 10.completed */}
             {/* Contact Us */}
             <section className="bg-gray-50 py-10">
-                <div className="container mx-auto text-center">
-                    <h2 className="text-3xl font-semibold text-purple-600">
-                        Bulletin Board
-                    </h2>
-                    <h3 className="text-xl font-light text-purple-500 mt-4">
-                        Contact Us
-                    </h3>
-                    <p className="text-sm text-gray-400 mb-10">
-                        (A unit of Elements Educare Private Limited)
-                    </p>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
+                <div className="container mx-auto px-4">
+                    <div className="text-center mb-10">
+                        <h2 className="text-4xl font-bold text-purple-600">
+                            Bulletin Board
+                        </h2>
+                        <h3 className="text-2xl font-light text-purple-500 mt-4">
+                            Contact Us
+                        </h3>
+                        <p className="text-base text-gray-400 mt-2">
+                            (A unit of Elements Educare Private Limited)
+                        </p>
+                    </div>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-12">
                         {contactDetails.map((detail, index) => (
-                            <div key={index} className="space-y-2 text-left">
-                                <div className="flex items-center justify-center md:justify-start mb-2">
+                            <div
+                                key={index}
+                                className="bg-white p-6 rounded-lg shadow-lg space-y-4"
+                            >
+                                <div className="flex items-center justify-center lg:justify-start mb-2">
                                     {detail.icon}
-                                    <h4 className="ml-2 text-xl font-semibold text-purple-600">
+                                    <h4 className="ml-4 text-2xl font-semibold text-purple-600">
                                         {detail.title}
                                     </h4>
                                 </div>
@@ -654,7 +653,7 @@ export default function Home() {
                                 <p className="text-gray-700">
                                     Map:{" "}
                                     <a
-                                        href="#"
+                                        href={detail.map}
                                         className="text-purple-500 underline"
                                     >
                                         {detail.map}
@@ -663,12 +662,15 @@ export default function Home() {
                             </div>
                         ))}
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                         {hoursDetails.map((detail, index) => (
-                            <div key={index} className="space-y-2 text-center">
+                            <div
+                                key={index}
+                                className="bg-white p-6 rounded-lg shadow-lg text-center space-y-4"
+                            >
                                 <div className="flex items-center justify-center mb-2">
                                     {detail.icon}
-                                    <h4 className="ml-2 text-xl font-semibold text-purple-600">
+                                    <h4 className="ml-4 text-2xl font-semibold text-purple-600">
                                         {detail.title}
                                     </h4>
                                 </div>
