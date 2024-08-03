@@ -22,6 +22,7 @@ const divStyle = {
 export default function Home() {
     return (
         <>
+            {/* 1.Finished */}
             {/* Image slider Section of the Home page */}
             <section>
                 <div className="slide-container">
@@ -42,17 +43,18 @@ export default function Home() {
                 </div>
             </section>
 
+            {/* 2.Finished */}
             {/* Learn More Section */}
-            <section className="bgOne text-white py-20">
-                <div className="container mx-auto flex justify-center items-center">
-                    <div className="w-2/3">
+            <section className="bgOne text-white py-20 px-5">
+                <div className="container mx-auto flex flex-col md:flex-row justify-center gap-10 items-center">
+                    <div className="md:w-2/3">
                         <p className="text-4xl">
                             Consistently among Top Preschools in India since
                             2015 Outstanding Educator in Early Years in India -
                             Dec 2020
                         </p>
                     </div>
-                    <div className="w-1/3">
+                    <div className="md:w-1/3">
                         <a
                             href="#"
                             className="border-white border-2 p-5 hover:bg-white  hover:text-black"
@@ -63,13 +65,14 @@ export default function Home() {
                 </div>
             </section>
 
+            {/* 3.completed */}
             {/* Elements kids section */}
             <section className="container mx-auto py-10">
                 <h2 className="text-center text-5xl">
                     Welcome to Elements Kids
                 </h2>
-                <div className="flex justify-center gap-10 py-10">
-                    <div className="slide-container w-1/3">
+                <div className="flex flex-col md:flex-row justify-center gap-10 py-10 px-5">
+                    <div className="slide-container md:w-1/3">
                         <h2 className="text-center mb-5">Kasavahalli Center</h2>
                         <div className="flex gap-5 justify-center items-center mb-5">
                             <a
@@ -99,7 +102,7 @@ export default function Home() {
                             ))}
                         </Slide>
                     </div>
-                    <div className="slide-container w-1/3">
+                    <div className="slide-container md:w-1/3">
                         <h2 className="text-center mb-5">
                             Doddakanneli Center
                         </h2>
@@ -134,8 +137,9 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="bgOne py-5">
-                <div className="flex gap-5 justify-center items-center">
+            {/* 4.completed */}
+            <section className="bgOne p-5">
+                <div className="flex flex-col md:flex-row gap-5 justify-center items-center">
                     <a
                         href="#"
                         className="text-white bg-orange-600 hover:bg-purple-500 py-5 px-3"
@@ -151,10 +155,11 @@ export default function Home() {
                 </div>
             </section>
 
+            {/* 5.completed */}
             {/* Enquiry Form */}
             <section>
                 <div>
-                    <div className="text-center py-5">
+                    <div className="text-center p-5">
                         <h2 className="text-3xl">Enquiry Form</h2>
                         <p className="mt-2 mb-5">
                             Fill the form for any Queries
@@ -219,6 +224,7 @@ export default function Home() {
                 </div>
             </section>
 
+            {/* 6.completed */}
             {/* Our Programs */}
             <section className="container mx-auto">
                 <div className="text-center py-12 bg-white">
@@ -253,8 +259,9 @@ export default function Home() {
                 </div>
             </section>
 
+            {/* 7.completed */}
             {/* Philosophy section */}
-            <section className="container mx-auto py-10">
+            <section className="container mx-auto py-10 px-5">
                 <h2 className="text-center text-5xl text-purple-800 mb-10">
                     Elements Kids' Philosophy
                 </h2>
@@ -308,7 +315,6 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
 
             {/* Offered Programs */}
             <section className="container mx-auto">
@@ -541,8 +547,9 @@ export default function Home() {
                 </div>
             </section>
 
+            {/* 9.completed */}
             {/* Tick mark section */}
-            <section className="bg-gray-50 py-10">
+            <section className="bg-gray-50 p-10">
                 <div className="container mx-auto flex flex-col justify-center items-center">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                         {features
@@ -673,8 +680,6 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
-            {/* Footer */}
         </>
     );
 }
