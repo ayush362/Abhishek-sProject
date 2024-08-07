@@ -3,13 +3,17 @@ import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 
-//Completed
 const Navbar = () => {
     const currentPath = usePathname();
     const [menuOpen, setMenuOpen] = useState(false);
+    const [subMenuOpen, setSubMenuOpen] = useState(false);
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
+    };
+
+    const toggleSubMenu = () => {
+        setSubMenuOpen(!subMenuOpen);
     };
 
     return (
@@ -61,7 +65,7 @@ const Navbar = () => {
                             )}
                         </button>
                     </div>
-                    <div className="hidden md:flex gap-10">
+                    <div className="hidden md:flex gap-10 items-center">
                         <a
                             href="/"
                             className={`p-5 ${
@@ -72,16 +76,50 @@ const Navbar = () => {
                         >
                             Home
                         </a>
-                        <a
-                            href="/programs"
-                            className={`p-5 ${
-                                currentPath === "/programs"
-                                    ? "bg-orange-500 rounded-lg text-white"
-                                    : ""
-                            }`}
+                        <div
+                            className="relative"
+                            onMouseEnter={toggleSubMenu}
+                            onMouseLeave={toggleSubMenu}
                         >
-                            Programs
-                        </a>
+                            <a
+                                href="/playgroup"
+                                className={`p-5 ${
+                                    ["/playgroup", "/kindergarten", "/nursery"].includes(
+                                        currentPath
+                                    )
+                                        ? "bg-orange-500 rounded-lg text-white"
+                                        : ""
+                                }`}
+                            >
+                                Programs
+                            </a>
+                            {subMenuOpen && (
+                                <div
+                                    className="absolute left-0 mt-4 pt-5 w-48 bg-gray-300 shadow-lg rounded-lg z-10"
+                                    onMouseEnter={() => setSubMenuOpen(true)}
+                                    onMouseLeave={() => setSubMenuOpen(false)}
+                                >
+                                    <a
+                                        href="/playgroup"
+                                        className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                                    >
+                                        Playgroup
+                                    </a>
+                                    <a
+                                        href="/nursery"
+                                        className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                                    >
+                                        Nursery
+                                    </a>
+                                    <a
+                                        href="/kindergarten"
+                                        className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                                    >
+                                        Kindergarten
+                                    </a>
+                                </div>
+                            )}
+                        </div>
                         <a
                             href="/contact"
                             className={`p-5 ${
@@ -106,16 +144,42 @@ const Navbar = () => {
                         >
                             Home
                         </a>
-                        <a
-                            href="/programs"
-                            className={`block p-4 ${
-                                currentPath === "/programs"
-                                    ? "bg-orange-500 text-white"
-                                    : ""
-                            }`}
-                        >
-                            Programs
-                        </a>
+                        <div className="relative">
+                            <button
+                                onClick={toggleSubMenu}
+                                className={`block p-4 text-left w-full ${
+                                    ["/playgroup", "/kindergarten", "/nursery"].includes(
+                                        currentPath
+                                    )
+                                        ? "bg-orange-500 text-white"
+                                        : ""
+                                }`}
+                            >
+                                Programs
+                            </button>
+                            {subMenuOpen && (
+                                <div className="pl-4">
+                                    <a
+                                        href="/playgroup"
+                                        className="block p-4"
+                                    >
+                                        Playgroup
+                                    </a>
+                                    <a
+                                        href="/nursery"
+                                        className="block p-4"
+                                    >
+                                        Nursery
+                                    </a>
+                                    <a
+                                        href="/kindergarten"
+                                        className="block p-4"
+                                    >
+                                        Kindergarten
+                                    </a>
+                                </div>
+                            )}
+                        </div>
                         <a
                             href="/contact"
                             className={`block p-4 ${
