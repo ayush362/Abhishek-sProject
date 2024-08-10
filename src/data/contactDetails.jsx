@@ -3,7 +3,7 @@ export const contactDetails = [
         title: "Kasavanahalli Center",
         address:
             "13, Owners Court West, Kasavanahalli, Off Sarjapur Road, Bangalore - 560 035",
-        email: "info01@elementskids.com",
+        email: "info01@Kidzee Kasavanahallikids.com",
         phone: "99028 74928",
         map: "View Map",
         icon: (

@@ -64,10 +64,10 @@ export default function Home() {
                 </div>
             </section> */}
             {/* 3.completed */}
-            {/* Elements kids section */}
+            {/* Kidzee Kasavanahalli kids section */}
             {/* <section className="container mx-auto py-10">
                 <h2 className="text-center text-5xl">
-                    Welcome to Elements Kids
+                    Welcome to Kidzee Kasavanahalli Kids
                 </h2>
                 <div className="flex flex-col md:flex-row justify-center gap-10 py-10 px-5">
                     <div className="slide-container md:w-1/3">
@@ -283,7 +283,7 @@ export default function Home() {
                             Focus on What is Right for the Child
                         </h3>
                         <p className="text-gray-700">
-                            Children at Elements Kids follow a regimen which
+                            Children at Kidzee Kasavanahalli Kids follow a regimen which
                             inculcates discipline in them while at the same time
                             providing them with enough freedom of imagination
                             and expression; freedom which is within the
@@ -349,7 +349,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className="md:w-1/2">
-                                <img src="/logo.jpg" alt="photo" />
+                                <img src="/logo.png" alt="photo" />
                                 <div className="flex justify-end items-end">
                                     <a
                                         href="#"
@@ -386,7 +386,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className="md:w-1/2">
-                                <img src="/logo.jpg" alt="photo" />
+                                <img src="/logo.png" alt="photo" />
                                 <div className="flex justify-end items-end">
                                     <a
                                         href="#"
@@ -423,7 +423,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className="md:w-1/2">
-                                <img src="/logo.jpg" alt="photo" />
+                                <img src="/logo.png" alt="photo" />
                                 <div className="flex justify-end items-end">
                                     <a
                                         href="#"
@@ -460,7 +460,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className="md:w-1/2">
-                                <img src="/logo.jpg" alt="photo" />
+                                <img src="/logo.png" alt="photo" />
                                 <div className="flex justify-end items-end">
                                     <a
                                         href="#"
@@ -497,7 +497,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className="md:w-1/2 flex flex-col justify-end items-end">
-                                <img src="/logo.jpg" alt="photo" />
+                                <img src="/" alt="photo" />
                                 <div className="flex justify-end items-end">
                                     <a
                                         href="#"
@@ -586,7 +586,7 @@ export default function Home() {
                             Contact Us
                         </h3>
                         <p className="text-base text-gray-400 mt-2">
-                            (A unit of Elements Educare Private Limited)
+                            (A unit of Kidzee Kasavanahalli Educare Private Limited)
                         </p>
                     </div>
                     <div className="flex justify-center items-center gap-10 mb-12">

@@ -7,10 +7,11 @@ const About = () => {
             <div className="container mx-auto px-6 lg:px-12">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl font-bold leading-tight">
-                        About Elements Kids
+                        About Kidzee Kasavanahalli Kids
                     </h2>
                     <p className="text-lg mt-4 max-w-lg mx-auto">
-                        Explore our mission, locations, and historical milestones.
+                        Explore our mission, locations, and historical
+                        milestones.
                     </p>
                 </div>
                 <div className="flex flex-col md:flex-row md:center gap-10">
@@ -20,13 +21,19 @@ const About = () => {
                                 Our Mission
                             </h3>
                             <p className="text-lg leading-relaxed">
-                                At Elements Kids, our mission is to provide high standards of early childhood education and care. Our team of IIM alumni and experienced educators are dedicated to nurturing the potential in every child.
+                                We are committed to instilling skills,
+                                knowledge, and values in our children in order
+                                to give them an inner voice for the twenty-first
+                                century. Our learning environment allows each
+                                child to nurture the learning minds namely the
+                                Focused Mind, Analytical Mind, Inventive Mind,
+                                Empathetic Mind, and Conscientious Mind.
                             </p>
                         </div>
                         <div className="flex justify-center">
                             <Image
-                                src="/logo.jpg"
-                                alt="Elements Kids Logo"
+                                src="/logo.png"
+                                alt="Kidzee Kasavanahalli Kids Logo"
                                 width={300}
                                 height={150}
                                 className="rounded-md"
