@@ -10,114 +10,69 @@ const page = () => {
                 </p>
             </section>
             {/* Form */}
-            <section className="container mx-auto py-16 px-8">
-                <div className="text-center mb-12">
-                    <h2 className="text-4xl font-bold text-purple-900">
-                        We Would Love To Hear From You
-                    </h2>
-                    <div className="flex justify-center mt-2">
-                        <div className="border-t-4 border-orange-500 w-20"></div>
-                    </div>
-                </div>
-
-                <div className="flex justify-between">
-                    {/* Left Side - Form */}
-                    <div className="w-1/2 pr-8">
-                        <p className="text-gray-700 mb-8">
-                            We are now accepting admissions for students across
-                            ages (starting from 6 months). We conduct regular
-                            in-house events and information sessions. Please
-                            submit the form to help us keep you posted. We are
-                            also keen to partner with young and mid-career
-                            professionals interested in exploring a new career
-                            in teaching.
+            <section>
+                <div>
+                    <div className="text-center p-5">
+                        <h2 className="text-3xl">Enquiry Form</h2>
+                        <p className="mt-2 mb-5">
+                            Fill the form for any Queries
                         </p>
-                        <form>
-                            <div className="mb-4">
-                                <label
-                                    className="block text-gray-600"
-                                    htmlFor="name"
-                                >
-                                    Name *
-                                </label>
+                        <form style={{ maxWidth: "600px", margin: "0 auto" }}>
+                            <div
+                                style={{
+                                    display: "flex",
+                                    justifyContent: "space-between",
+                                    marginBottom: "1rem",
+                                }}
+                            >
                                 <input
+                                    className="border border-gray-200"
                                     type="text"
-                                    id="name"
-                                    name="name"
-                                    className="w-full border border-gray-300 rounded-lg py-2 px-4 mt-1"
-                                    placeholder="Your Name"
+                                    placeholder="Your Name *"
+                                    style={{ width: "48%", padding: "0.5rem" }}
                                 />
-                            </div>
-                            <div className="mb-4">
-                                <label
-                                    className="block text-gray-600"
-                                    htmlFor="email"
-                                >
-                                    Email *
-                                </label>
                                 <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    className="w-full border border-gray-300 rounded-lg py-2 px-4 mt-1"
-                                    placeholder="Your Email"
+                                    className="border border-gray-200"
+                                    type="text"
+                                    placeholder="Phone Number *"
+                                    style={{ width: "48%", padding: "0.5rem" }}
                                 />
                             </div>
-                            <div className="mb-4">
-                                <label
-                                    className="block text-gray-600"
-                                    htmlFor="message"
-                                >
-                                    Your Message
-                                </label>
+                            <div
+                                style={{
+                                    display: "flex",
+                                    justifyContent: "space-between",
+                                    marginBottom: "1rem",
+                                }}
+                            >
+                                <input
+                                    className="border border-gray-200"
+                                    type="email"
+                                    placeholder="Your E-mail *"
+                                    style={{ width: "48%", padding: "0.5rem" }}
+                                />
+                                <input
+                                    className="border border-gray-200"
+                                    type="text"
+                                    placeholder="Subject"
+                                    style={{ width: "48%", padding: "0.5rem" }}
+                                />
+                            </div>
+                            <div style={{ marginBottom: "1rem" }}>
                                 <textarea
-                                    id="message"
-                                    name="message"
-                                    className="w-full border border-gray-300 rounded-lg py-2 px-4 mt-1 h-32"
-                                    placeholder="Your Message"
+                                    className="border border-gray-200"
+                                    placeholder="Your Message *"
+                                    style={{ width: "100%", padding: "0.5rem" }}
+                                    rows="4"
                                 ></textarea>
                             </div>
-                            <div className="text-right">
-                                <button
-                                    type="submit"
-                                    className="bg-orange-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-orange-600"
-                                >
-                                    SUBMIT
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-
-                    {/* Right Side - Contact Information */}
-                    <div className="w-1/3 bg-purple-100 p-6 rounded-lg">
-                        <h3 className="text-lg font-semibold mb-4">
-                            Contact Information
-                        </h3>
-                        <div className="mb-4">
-                            <h4 className="text-purple-900 font-semibold">
-                                Email Us :
-                            </h4>
-                            <p className="text-gray-700">
-                                info01@elementskids.com
-                            </p>
-                        </div>
-                        <div className="mb-4">
-                            <h4 className="text-purple-900 font-semibold">
-                                Call Us :
-                            </h4>
-                            <p className="text-gray-700">099028 74928</p>
-                        </div>
-                        <div>
-                            <h4 className="text-purple-900 font-semibold">
-                                Map:
-                            </h4>
-                            <a
-                                href="#"
-                                className="text-orange-500 hover:underline"
+                            <button
+                                type="submit"
+                                className="hover:bg-purple-500 bg-orange-500 text-white border-none pointer p-5"
                             >
-                                View Map
-                            </a>
-                        </div>
+                                SEND MESSAGE
+                            </button>
+                        </form>
                     </div>
                 </div>
             </section>

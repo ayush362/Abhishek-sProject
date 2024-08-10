@@ -311,9 +311,9 @@ export default function Home() {
             </section>
             {/* 8.Completed */}
             {/* Offered Programs */}
-            <section className="container mx-auto p-4">
+            <section className="container mx-auto p-6">
                 <div>
-                    <h3 className="text-[#56509f] text-3xl sm:text-6xl text-center my-5">
+                    <h3 className="text-[#56509f] text-3xl sm:text-6xl text-center my-5 ">
                         Programs Offered
                     </h3>
                     <p className="text-center text-gray-400 my-5">
@@ -323,202 +323,189 @@ export default function Home() {
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                         {/* Pre-Montessori Card */}
-                        <div className="bg-[#56509f] flex flex-col md:flex-row py-4 pl-4 rounded-lg shadow-lg text-white">
-                            <div className="flex-1">
-                                <h3 className="text-xl font-bold mb-2">
-                                    Pre-Montessori
-                                </h3>
-                                <p className="italic mb-4">
-                                    (Equivalent to Playgroup)
+                        <div className="bg-[#56509f] rounded-lg shadow-lg text-white flex flex-col md:flex-row py-10 pl-5 max-w-[600px]">
+                            <div className="md:w-1/2 mx-10">
+                                <h4>Pre-Montessori</h4>
+                                <p className="text-gray-400">
+                                    (Equivalent to laygroup)
                                 </p>
-                                <div className="mb-2">
-                                    <span className="text-4xl font-semibold">
-                                        12
-                                    </span>
-                                    <div>
-                                        <span className="block">
+                                <div className="flex py-5">
+                                    <div className="border-r-2 border-gray-400 pr-5 mr-5">
+                                        <h4>12</h4>
+                                        <p className="text-gray-400">
                                             Class Size
-                                        </span>
-                                        <span className="block text-sm">
-                                            6 - 8 Covid Class Size
-                                        </span>
+                                        </p>
+                                        <h4>6 - 8</h4>
+                                        <p className="text-gray-400">
+                                            Covid Class Size
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h4>1.5 - 3</h4>
+                                        <p className="text-gray-400">
+                                            Years Olds
+                                        </p>
                                     </div>
                                 </div>
-                                <div>
-                                    <span className="text-4xl font-semibold">
-                                        1.5 - 3
-                                    </span>
-                                    <span className="block">Years Old</span>
+                            </div>
+                            <div className="md:w-1/2">
+                                <img src="/logo.jpg" alt="photo" />
+                                <div className="flex justify-end items-end">
+                                    <a
+                                        href="#"
+                                        className="bg-orange-500 py-4 px-3"
+                                    >
+                                        Learn More
+                                    </a>
                                 </div>
                             </div>
-                            <div className="flex flex-col items-center justify-center mt-4 md:mt-0">
-                                <img
-                                    src="/logo.jpg"
-                                    alt="images"
-                                    height={200}
-                                    width={200}
-                                    className="w-full"
-                                />
-                                <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
-                                    READ MORE
-                                </button>
-                            </div>
                         </div>
-
-                        {/* Montessori Program Card */}
-                        <div className="bg-[#56509f] flex flex-col md:flex-row py-4 pl-4 rounded-lg shadow-lg text-white">
-                            <div className="flex-1">
-                                <h3 className="text-xl font-bold mb-2">
-                                    Montessori Program
-                                </h3>
-                                <p className="italic mb-4">
-                                    (Equivalent to Nursery, LKG, UKG)
+                        <div className="bg-[#56509f] rounded-lg shadow-lg text-white flex flex-col md:flex-row py-10 pl-5 max-w-[600px]">
+                            <div className="md:w-1/2 mx-10">
+                                <h4>Pre-Montessori</h4>
+                                <p className="text-gray-400">
+                                    (Equivalent to laygroup)
                                 </p>
-                                <div className="mb-2">
-                                    <span className="text-4xl font-semibold">
-                                        15
-                                    </span>
-                                    <div>
-                                        <span className="block">
+                                <div className="flex py-5">
+                                    <div className="border-r-2 border-gray-400 pr-5 mr-5">
+                                        <h4>12</h4>
+                                        <p className="text-gray-400">
                                             Class Size
-                                        </span>
-                                        <span className="block text-sm">
-                                            6 - 9 Covid Class Size
-                                        </span>
+                                        </p>
+                                        <h4>6 - 8</h4>
+                                        <p className="text-gray-400">
+                                            Covid Class Size
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h4>1.5 - 3</h4>
+                                        <p className="text-gray-400">
+                                            Years Olds
+                                        </p>
                                     </div>
                                 </div>
-                                <div>
-                                    <span className="text-4xl font-semibold">
-                                        2.5 - 6
-                                    </span>
-                                    <span className="block">Years Old</span>
+                            </div>
+                            <div className="md:w-1/2">
+                                <img src="/logo.jpg" alt="photo" />
+                                <div className="flex justify-end items-end">
+                                    <a
+                                        href="#"
+                                        className="bg-orange-500 py-4 px-3"
+                                    >
+                                        Learn More
+                                    </a>
                                 </div>
                             </div>
-                            <div className="flex flex-col items-center justify-center mt-4 md:mt-0">
-                                <img
-                                    src="/logo.jpg"
-                                    alt="images"
-                                    height={200}
-                                    width={200}
-                                    className="w-full"
-                                />
-                                <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
-                                    READ MORE
-                                </button>
-                            </div>
-                        </div>
-
-                        {/* Active Day Care Card */}
-                        <div className="bg-[#56509f] flex flex-col md:flex-rowpy-4 pl-4 rounded-lg shadow-lg text-white">
-                            <div className="flex-1">
-                                <h3 className="text-xl font-bold mb-2">
-                                    Active Day Care
-                                </h3>
-                                <p className="italic mb-4">
-                                    (Age Specific Rooms)
+                        </div>{" "}
+                        <div className="bg-[#56509f] rounded-lg shadow-lg text-white flex flex-col md:flex-row py-10 pl-5 max-w-[600px]">
+                            <div className="md:w-1/2 mx-10">
+                                <h4>Pre-Montessori</h4>
+                                <p className="text-gray-400">
+                                    (Equivalent to laygroup)
                                 </p>
-                                <div className="mb-2">
-                                    <span className="text-4xl font-semibold">
-                                        Up to 15
-                                    </span>
-                                    <div>
-                                        <span className="block">
+                                <div className="flex py-5">
+                                    <div className="border-r-2 border-gray-400 pr-5 mr-5">
+                                        <h4>12</h4>
+                                        <p className="text-gray-400">
                                             Class Size
-                                        </span>
-                                        <span className="block text-sm">
-                                            6 - 9 Covid Class Size
-                                        </span>
+                                        </p>
+                                        <h4>6 - 8</h4>
+                                        <p className="text-gray-400">
+                                            Covid Class Size
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h4>1.5 - 3</h4>
+                                        <p className="text-gray-400">
+                                            Years Olds
+                                        </p>
                                     </div>
                                 </div>
-                                <div>
-                                    <span className="text-4xl font-semibold">
-                                        0.5 - 12
-                                    </span>
-                                    <span className="block">Years Old</span>
+                            </div>
+                            <div className="md:w-1/2">
+                                <img src="/logo.jpg" alt="photo" />
+                                <div className="flex justify-end items-end">
+                                    <a
+                                        href="#"
+                                        className="bg-orange-500 py-4 px-3"
+                                    >
+                                        Learn More
+                                    </a>
                                 </div>
                             </div>
-                            <div className="flex flex-col items-center justify-center mt-4 md:mt-0">
-                                <img
-                                    src="/logo.jpg"
-                                    alt="images"
-                                    height={200}
-                                    width={200}
-                                    className="w-full"
-                                />
-                                <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
-                                    READ MORE
-                                </button>
-                            </div>
-                        </div>
-
-                        {/* Summer Camp Card */}
-                        <div className="bg-[#56509f] flex flex-col md:flex-row py-4 pl-4 rounded-lg shadow-lg text-white">
-                            <div className="flex-1">
-                                <h3 className="text-xl font-bold mb-2">
-                                    Summer Camp
-                                </h3>
-                                <p className="italic mb-4">
-                                    Creative Ideas, STEAM Challenges, Brain
-                                    Exercises, Life Skills, Rhythm & Beats,
-                                    Phonics, Dramatics, Mastering Manuscripts,
-                                    Self Defence, Outdoor Play
+                        </div>{" "}
+                        <div className="bg-[#56509f] rounded-lg shadow-lg text-white flex flex-col md:flex-row py-10 pl-5 max-w-[600px]">
+                            <div className="md:w-1/2 mx-10">
+                                <h4>Pre-Montessori</h4>
+                                <p className="text-gray-400">
+                                    (Equivalent to laygroup)
                                 </p>
-                                <div>
-                                    <span className="text-4xl font-semibold">
-                                        Varies as per Activity
-                                    </span>
-                                    <span className="block">
-                                        3 - 12 Years Old
-                                    </span>
+                                <div className="flex py-5">
+                                    <div className="border-r-2 border-gray-400 pr-5 mr-5">
+                                        <h4>12</h4>
+                                        <p className="text-gray-400">
+                                            Class Size
+                                        </p>
+                                        <h4>6 - 8</h4>
+                                        <p className="text-gray-400">
+                                            Covid Class Size
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h4>1.5 - 3</h4>
+                                        <p className="text-gray-400">
+                                            Years Olds
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="flex flex-col items-center justify-center  mt-4 md:mt-0">
-                                <img
-                                    src="/logo.jpg"
-                                    alt="images"
-                                    height={200}
-                                    width={200}
-                                    className="w-full"
-                                />
-                                <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
-                                    READ MORE
-                                </button>
+                            <div className="md:w-1/2">
+                                <img src="/logo.jpg" alt="photo" />
+                                <div className="flex justify-end items-end">
+                                    <a
+                                        href="#"
+                                        className="bg-orange-500 py-4 px-3"
+                                    >
+                                        Learn More
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-
-                        {/* After-School Activity Club Card */}
-                        <div className="bg-[#56509f] col-span-1 md:col-span-2 flex flex-col md:flex-row py-4 pl-4 rounded-lg shadow-lg text-white">
-                            <div className="flex-1">
-                                <h3 className="text-xl font-bold mb-2">
-                                    After-School Activity Club
-                                </h3>
-                                <p className="italic mb-4">
-                                    Platform provides option of Tuition classes
-                                    (UKG - 5th), Dance, Bharatanatyam, Keyboard,
-                                    Martial Arts, Football, Chess, Drawing &
-                                    Painting, Abacus, CueMath, Explore Labs,
-                                    Board Games, Puzzles, Basketball, etc.
+                        </div>{" "}
+                        <div className="bg-[#56509f] col-span-2 rounded-lg shadow-lg text-white flex flex-col md:flex-row py-10 pl-5">
+                            <div className="md:w-1/2 mx-10">
+                                <h4>Pre-Montessori</h4>
+                                <p className="text-gray-400">
+                                    (Equivalent to laygroup)
                                 </p>
-                                <div>
-                                    <span className="text-4xl font-semibold">
-                                        Varies as per Activity
-                                    </span>
-                                    <span className="block">
-                                        3 - 12 Years Old
-                                    </span>
+                                <div className="flex py-5">
+                                    <div className="border-r-2 border-gray-400 pr-5 mr-5">
+                                        <h4>12</h4>
+                                        <p className="text-gray-400">
+                                            Class Size
+                                        </p>
+                                        <h4>6 - 8</h4>
+                                        <p className="text-gray-400">
+                                            Covid Class Size
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h4>1.5 - 3</h4>
+                                        <p className="text-gray-400">
+                                            Years Olds
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="flex flex-col items-center justify-center md:mt-0">
-                                <img
-                                    src="/logo.jpg"
-                                    alt="images"
-                                    height={300}
-                                    width={300}
-                                    className="w-full"
-                                />
-                                <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
-                                    READ MORE
-                                </button>
+                            <div className="md:w-1/2 flex flex-col justify-end items-end">
+                                <img src="/logo.jpg" alt="photo" />
+                                <div className="flex justify-end items-end">
+                                    <a
+                                        href="#"
+                                        className="bg-orange-500 py-4 px-3"
+                                    >
+                                        Learn More
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
