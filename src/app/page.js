@@ -283,11 +283,11 @@ export default function Home() {
                             Focus on What is Right for the Child
                         </h3>
                         <p className="text-gray-700">
-                            Children at Kidzee Kasavanahalli Kids follow a regimen which
-                            inculcates discipline in them while at the same time
-                            providing them with enough freedom of imagination
-                            and expression; freedom which is within the
-                            boundaries of discipline.
+                            Children at Kidzee Kasavanahalli Kids follow a
+                            regimen which inculcates discipline in them while at
+                            the same time providing them with enough freedom of
+                            imagination and expression; freedom which is within
+                            the boundaries of discipline.
                         </p>
                     </div>
                     <div className="flex flex-col items-center text-center">
@@ -336,9 +336,6 @@ export default function Home() {
                                             Class Size
                                         </p>
                                         <h4>6 - 8</h4>
-                                        <p className="text-gray-400">
-                                            Covid Class Size
-                                        </p>
                                     </div>
                                     <div>
                                         <h4>1.5 - 3</h4>
@@ -373,138 +370,126 @@ export default function Home() {
                                             Class Size
                                         </p>
                                         <h4>6 - 8</h4>
-                                        <p className="text-gray-400">
-                                            Covid Class Size
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <h4>1.5 - 3</h4>
-                                        <p className="text-gray-400">
-                                            Years Olds
-                                        </p>
+                                        <div>
+                                            <h4>1.5 - 3</h4>
+                                            <p className="text-gray-400">
+                                                Years Olds
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="md:w-1/2">
-                                <img src="/logo.png" alt="photo" />
-                                <div className="flex justify-end items-end">
-                                    <a
-                                        href="#"
-                                        className="bg-orange-500 py-4 px-3"
-                                    >
-                                        Learn More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>{" "}
-                        <div className="bg-[#56509f] rounded-lg shadow-lg text-white flex flex-col md:flex-row py-10 pl-5 max-w-[600px]">
-                            <div className="md:w-1/2 mx-10">
-                                <h4>Pre-Montessori</h4>
-                                <p className="text-gray-400">
-                                    (Equivalent to laygroup)
-                                </p>
-                                <div className="flex py-5">
-                                    <div className="border-r-2 border-gray-400 pr-5 mr-5">
-                                        <h4>12</h4>
-                                        <p className="text-gray-400">
-                                            Class Size
-                                        </p>
-                                        <h4>6 - 8</h4>
-                                        <p className="text-gray-400">
-                                            Covid Class Size
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <h4>1.5 - 3</h4>
-                                        <p className="text-gray-400">
-                                            Years Olds
-                                        </p>
+                                <div className="md:w-1/2">
+                                    <img src="/logo.png" alt="photo" />
+                                    <div className="flex justify-end items-end">
+                                        <a
+                                            href="#"
+                                            className="bg-orange-500 py-4 px-3"
+                                        >
+                                            Learn More
+                                        </a>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="md:w-1/2">
-                                <img src="/logo.png" alt="photo" />
-                                <div className="flex justify-end items-end">
-                                    <a
-                                        href="#"
-                                        className="bg-orange-500 py-4 px-3"
-                                    >
-                                        Learn More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>{" "}
-                        <div className="bg-[#56509f] rounded-lg shadow-lg text-white flex flex-col md:flex-row py-10 pl-5 max-w-[600px]">
-                            <div className="md:w-1/2 mx-10">
-                                <h4>Pre-Montessori</h4>
-                                <p className="text-gray-400">
-                                    (Equivalent to laygroup)
-                                </p>
-                                <div className="flex py-5">
-                                    <div className="border-r-2 border-gray-400 pr-5 mr-5">
-                                        <h4>12</h4>
-                                        <p className="text-gray-400">
-                                            Class Size
-                                        </p>
-                                        <h4>6 - 8</h4>
-                                        <p className="text-gray-400">
-                                            Covid Class Size
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <h4>1.5 - 3</h4>
-                                        <p className="text-gray-400">
-                                            Years Olds
-                                        </p>
+                            </div>{" "}
+                            <div className="bg-[#56509f] rounded-lg shadow-lg text-white flex flex-col md:flex-row py-10 pl-5 max-w-[600px]">
+                                <div className="md:w-1/2 mx-10">
+                                    <h4>Pre-Montessori</h4>
+                                    <p className="text-gray-400">
+                                        (Equivalent to laygroup)
+                                    </p>
+                                    <div className="flex py-5">
+                                        <div className="border-r-2 border-gray-400 pr-5 mr-5">
+                                            <h4>12</h4>
+                                            <p className="text-gray-400">
+                                                Class Size
+                                            </p>
+                                            <h4>6 - 8</h4>
+                                        </div>
+                                        <div>
+                                            <h4>1.5 - 3</h4>
+                                            <p className="text-gray-400">
+                                                Years Olds
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="md:w-1/2">
-                                <img src="/logo.png" alt="photo" />
-                                <div className="flex justify-end items-end">
-                                    <a
-                                        href="#"
-                                        className="bg-orange-500 py-4 px-3"
-                                    >
-                                        Learn More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>{" "}
-                        <div className="bg-[#56509f] col-span-2 rounded-lg shadow-lg text-white flex flex-col md:flex-row py-10 pl-5">
-                            <div className="md:w-1/2 mx-10">
-                                <h4>Pre-Montessori</h4>
-                                <p className="text-gray-400">
-                                    (Equivalent to laygroup)
-                                </p>
-                                <div className="flex py-5">
-                                    <div className="border-r-2 border-gray-400 pr-5 mr-5">
-                                        <h4>12</h4>
-                                        <p className="text-gray-400">
-                                            Class Size
-                                        </p>
-                                        <h4>6 - 8</h4>
-                                        <p className="text-gray-400">
-                                            Covid Class Size
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <h4>1.5 - 3</h4>
-                                        <p className="text-gray-400">
-                                            Years Olds
-                                        </p>
+                                <div className="md:w-1/2">
+                                    <img src="/logo.png" alt="photo" />
+                                    <div className="flex justify-end items-end">
+                                        <a
+                                            href="#"
+                                            className="bg-orange-500 py-4 px-3"
+                                        >
+                                            Learn More
+                                        </a>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="md:w-1/2 flex flex-col justify-end items-end">
-                                <img src="/" alt="photo" />
-                                <div className="flex justify-end items-end">
-                                    <a
-                                        href="#"
-                                        className="bg-orange-500 py-4 px-3"
-                                    >
-                                        Learn More
-                                    </a>
+                            </div>{" "}
+                            <div className="bg-[#56509f] rounded-lg shadow-lg text-white flex flex-col md:flex-row py-10 pl-5 max-w-[600px]">
+                                <div className="md:w-1/2 mx-10">
+                                    <h4>Pre-Montessori</h4>
+                                    <p className="text-gray-400">
+                                        (Equivalent to laygroup)
+                                    </p>
+                                    <div className="flex py-5">
+                                        <div className="border-r-2 border-gray-400 pr-5 mr-5">
+                                            <h4>12</h4>
+                                            <p className="text-gray-400">
+                                                Class Size
+                                            </p>
+                                            <h4>6 - 8</h4>
+                                        </div>
+                                        <div>
+                                            <h4>1.5 - 3</h4>
+                                            <p className="text-gray-400">
+                                                Years Olds
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="md:w-1/2">
+                                    <img src="/logo.png" alt="photo" />
+                                    <div className="flex justify-end items-end">
+                                        <a
+                                            href="#"
+                                            className="bg-orange-500 py-4 px-3"
+                                        >
+                                            Learn More
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>{" "}
+                            <div className="bg-[#56509f] col-span-2 rounded-lg shadow-lg text-white flex flex-col md:flex-row py-10 pl-5">
+                                <div className="md:w-1/2 mx-10">
+                                    <h4>Pre-Montessori</h4>
+                                    <p className="text-gray-400">
+                                        (Equivalent to laygroup)
+                                    </p>
+                                    <div className="flex py-5">
+                                        <div className="border-r-2 border-gray-400 pr-5 mr-5">
+                                            <h4>12</h4>
+                                            <p className="text-gray-400">
+                                                Class Size
+                                            </p>
+                                            <h4>6 - 8</h4>
+                                        </div>
+                                        <div>
+                                            <h4>1.5 - 3</h4>
+                                            <p className="text-gray-400">
+                                                Years Olds
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="md:w-1/2 flex flex-col justify-end items-end">
+                                    <img src="/" alt="photo" />
+                                    <div className="flex justify-end items-end">
+                                        <a
+                                            href="#"
+                                            className="bg-orange-500 py-4 px-3"
+                                        >
+                                            Learn More
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -586,7 +571,8 @@ export default function Home() {
                             Contact Us
                         </h3>
                         <p className="text-base text-gray-400 mt-2">
-                            (A unit of Kidzee Kasavanahalli Educare Private Limited)
+                            (A unit of Kidzee Kasavanahalli Educare Private
+                            Limited)
                         </p>
                     </div>
                     <div className="flex justify-center items-center gap-10 mb-12">

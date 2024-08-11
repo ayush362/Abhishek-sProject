@@ -1,6 +1,6 @@
 const playgroupData = {
     title: "PlayGroup",
-    ageGroup: "Age Group: 1.5 - 2.5 Years",
+    ageGroup: "Class size = 15   Age Group: 1.5 - 2.5 Years",
     duration: "Duration: 3 Hours/Day",
     description: `
       As per RTE- Right to Education and NEP- National Education Policy from state to state.

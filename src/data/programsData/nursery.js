@@ -1,6 +1,6 @@
 const nurseryData = {
     title: "Nursery",
-    ageGroup: "Age Group: 2.5 Years - 3.5 Years*",
+    ageGroup: "class size = 15 Age group = 2.5 to 3.5 years",
     duration: "Duration: 3 Hours/Day",
     description: `
       *As per RTE- Right to Education and NEP- National Education Policy from state to state.

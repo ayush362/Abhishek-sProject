@@ -7,7 +7,7 @@ const About = () => {
             <div className="container mx-auto px-6 lg:px-12">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl font-bold leading-tight">
-                        About Kidzee Kasavanahalli Kids
+                        About Kidzee Kasavanahalli
                     </h2>
                     <p className="text-lg mt-4 max-w-lg mx-auto">
                         Explore our mission, locations, and historical

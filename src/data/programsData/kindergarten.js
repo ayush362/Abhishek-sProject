@@ -1,7 +1,8 @@
 const kindergartenData = {
     title: "Kindergarten",
-    ageGroup: "Junior K.G. 4 - 5 Years, Senior K.G. 5 - 6 Years",
-    duration: "Duration: 4 Hours/Day",
+    ageGroup:
+        "(Junior KG: Age group = 4 to 5 years)  (Senior K.G:Age group = 5 to 6 years)  class size = 15",
+    duration: "Duration: 4 Hours/Day ",
     description: `
       *As per RTE- Right to Education and NEP- National Education Policy from state to state.
 
