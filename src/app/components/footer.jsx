@@ -5,11 +5,31 @@ import Image from "next/image";
 const Footer = () => {
     return (
         <footer className="container mx-auto overflow-hidden py-10 px-5">
-            <div className="flex flex-col md:flex-row justify-center items-center">
-                <Image src="/logo.jpg" alt="image" width={150} height={150} />
-                <Image src="/logo.jpg" alt="image" width={150} height={150} />
-                <Image src="/logo.jpg" alt="image" width={150} height={150} />
-                <Image src="/logo.jpg" alt="image" width={150} height={150} />
+            <div className="flex gap-10 py-4 flex-col md:flex-row justify-center items-center">
+                <a href="https://www.facebook.com/KidzeeKasavanahalli/">
+                    <Image
+                        src="/Facebook.png"
+                        alt="image"
+                        width={50}
+                        height={50}
+                    />
+                </a>
+                <a href="https://www.instagram.com/kidzee.kasavanahalli/">
+                    <Image
+                        src="/instagram.svg"
+                        alt="image"
+                        width={50}
+                        height={50}
+                    />
+                </a>
+                <a href="https://www.youtube.com/@KidzeeKasavanahalli/">
+                    <Image
+                        src="/youtube.svg"
+                        alt="image"
+                        width={50}
+                        height={50}
+                    />
+                </a>
             </div>
             <div>
                 <p className="text-center">

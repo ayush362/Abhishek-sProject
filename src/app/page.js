@@ -44,7 +44,7 @@ export default function Home() {
             </section>
             {/* 2.Finished */}
             {/* Learn More Section */}
-            <section className="bgOne text-white py-20 px-5">
+            {/* <section className="bgOne text-white py-20 px-5">
                 <div className="container mx-auto flex flex-col md:flex-row justify-center gap-10 items-center">
                     <div className="md:w-2/3">
                         <p className="text-4xl">
@@ -62,10 +62,10 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
-            </section>
+            </section> */}
             {/* 3.completed */}
             {/* Elements kids section */}
-            <section className="container mx-auto py-10">
+            {/* <section className="container mx-auto py-10">
                 <h2 className="text-center text-5xl">
                     Welcome to Elements Kids
                 </h2>
@@ -133,9 +133,9 @@ export default function Home() {
                         </Slide>
                     </div>
                 </div>
-            </section>
+            </section> */}
             {/* 4.completed */}
-            <section className="bgOne p-5">
+            {/* <section className="bgOne p-5">
                 <div className="flex flex-col md:flex-row gap-5 justify-center items-center">
                     <a
                         href="#"
@@ -150,7 +150,7 @@ export default function Home() {
                         BOOK VIRTUAL/CAMPUS APPOINTMENT
                     </a>
                 </div>
-            </section>
+            </section> */}
             {/* 5.completed */}
             {/* Enquiry Form */}
             <section>
@@ -257,7 +257,7 @@ export default function Home() {
             {/* Philosophy section */}
             <section className="container mx-auto py-10 px-5">
                 <h2 className="text-center text-5xl text-purple-800 mb-10">
-                    Elements Kids' Philosophy
+                    Kidzee Kasavanahalli’s Philosophy
                 </h2>
                 <div className="flex flex-col md:flex-row justify-around items-start md:items-center gap-10">
                     <div className="flex flex-col items-center text-center">
@@ -265,7 +265,7 @@ export default function Home() {
                             🕒
                         </div>
                         <h3 className="text-xl font-semibold text-purple-800 mb-2">
-                            Self-Respect
+                            Widely spread preschool chain in India.
                         </h3>
                         <p className="text-gray-700">
                             Throughout the various sessions in the classroom the
@@ -280,7 +280,7 @@ export default function Home() {
                             📚
                         </div>
                         <h3 className="text-xl font-semibold text-purple-800 mb-2">
-                            Growth Oriented Environment
+                            Focus on What is Right for the Child
                         </h3>
                         <p className="text-gray-700">
                             Children at Elements Kids follow a regimen which
@@ -295,7 +295,7 @@ export default function Home() {
                             🧠
                         </div>
                         <h3 className="text-xl font-semibold text-purple-800 mb-2">
-                            Emotional Intelligence
+                            Integrated Curriculum
                         </h3>
                         <p className="text-gray-700">
                             Interactions across Pre-School, Day Care & Activity
@@ -322,215 +322,199 @@ export default function Home() {
                         to 12 years
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                        <div className="bg-[#56509f] flex flex-col md:flex-row p-4 rounded-lg shadow-lg text-white">
+                        {/* Pre-Montessori Card */}
+                        <div className="bg-[#56509f] flex flex-col md:flex-row py-4 pl-4 rounded-lg shadow-lg text-white">
                             <div className="flex-1">
                                 <h3 className="text-xl font-bold mb-2">
                                     Pre-Montessori
                                 </h3>
                                 <p className="italic mb-4">
-                                    (Equivalent to playgroup)
+                                    (Equivalent to Playgroup)
                                 </p>
+                                <div className="mb-2">
+                                    <span className="text-4xl font-semibold">
+                                        12
+                                    </span>
+                                    <div>
+                                        <span className="block">
+                                            Class Size
+                                        </span>
+                                        <span className="block text-sm">
+                                            6 - 8 Covid Class Size
+                                        </span>
+                                    </div>
+                                </div>
                                 <div>
-                                    <div className="flex items-center mb-2">
-                                        <span className="text-4xl font-semibold mr-2">
-                                            12
-                                        </span>
-                                        <div>
-                                            <span className="block">
-                                                Class Size
-                                            </span>
-                                            <span className="block text-sm">
-                                                6 - 8 Covid Class Size
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div className="flex items-center">
-                                        <span className="text-4xl font-semibold mr-2">
-                                            1.5 - 3
-                                        </span>
-                                        <span className="block">Years Old</span>
-                                    </div>
+                                    <span className="text-4xl font-semibold">
+                                        1.5 - 3
+                                    </span>
+                                    <span className="block">Years Old</span>
                                 </div>
                             </div>
                             <div className="flex flex-col items-center justify-center mt-4 md:mt-0">
-                                <Image
+                                <img
                                     src="/logo.jpg"
                                     alt="images"
                                     height={200}
                                     width={200}
-                                    className="rounded-full mb-4"
+                                    className="w-full"
                                 />
                                 <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
                                     READ MORE
                                 </button>
                             </div>
                         </div>
-                        <div className="bg-[#56509f] flex flex-col md:flex-row p-4 rounded-lg shadow-lg text-white">
+
+                        {/* Montessori Program Card */}
+                        <div className="bg-[#56509f] flex flex-col md:flex-row py-4 pl-4 rounded-lg shadow-lg text-white">
                             <div className="flex-1">
                                 <h3 className="text-xl font-bold mb-2">
-                                    Pre-Montessori
+                                    Montessori Program
                                 </h3>
                                 <p className="italic mb-4">
-                                    (Equivalent to playgroup)
+                                    (Equivalent to Nursery, LKG, UKG)
                                 </p>
+                                <div className="mb-2">
+                                    <span className="text-4xl font-semibold">
+                                        15
+                                    </span>
+                                    <div>
+                                        <span className="block">
+                                            Class Size
+                                        </span>
+                                        <span className="block text-sm">
+                                            6 - 9 Covid Class Size
+                                        </span>
+                                    </div>
+                                </div>
                                 <div>
-                                    <div className="flex items-center mb-2">
-                                        <span className="text-4xl font-semibold mr-2">
-                                            12
-                                        </span>
-                                        <div>
-                                            <span className="block">
-                                                Class Size
-                                            </span>
-                                            <span className="block text-sm">
-                                                6 - 8 Covid Class Size
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div className="flex items-center">
-                                        <span className="text-4xl font-semibold mr-2">
-                                            1.5 - 3
-                                        </span>
-                                        <span className="block">Years Old</span>
-                                    </div>
+                                    <span className="text-4xl font-semibold">
+                                        2.5 - 6
+                                    </span>
+                                    <span className="block">Years Old</span>
                                 </div>
                             </div>
                             <div className="flex flex-col items-center justify-center mt-4 md:mt-0">
-                                <Image
+                                <img
                                     src="/logo.jpg"
                                     alt="images"
                                     height={200}
                                     width={200}
-                                    className="rounded-full mb-4"
+                                    className="w-full"
                                 />
                                 <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
                                     READ MORE
                                 </button>
                             </div>
                         </div>
-                        <div className="bg-[#56509f] flex flex-col md:flex-row p-4 rounded-lg shadow-lg text-white">
+
+                        {/* Active Day Care Card */}
+                        <div className="bg-[#56509f] flex flex-col md:flex-rowpy-4 pl-4 rounded-lg shadow-lg text-white">
                             <div className="flex-1">
                                 <h3 className="text-xl font-bold mb-2">
-                                    Pre-Montessori
+                                    Active Day Care
                                 </h3>
                                 <p className="italic mb-4">
-                                    (Equivalent to playgroup)
+                                    (Age Specific Rooms)
                                 </p>
+                                <div className="mb-2">
+                                    <span className="text-4xl font-semibold">
+                                        Up to 15
+                                    </span>
+                                    <div>
+                                        <span className="block">
+                                            Class Size
+                                        </span>
+                                        <span className="block text-sm">
+                                            6 - 9 Covid Class Size
+                                        </span>
+                                    </div>
+                                </div>
                                 <div>
-                                    <div className="flex items-center mb-2">
-                                        <span className="text-4xl font-semibold mr-2">
-                                            12
-                                        </span>
-                                        <div>
-                                            <span className="block">
-                                                Class Size
-                                            </span>
-                                            <span className="block text-sm">
-                                                6 - 8 Covid Class Size
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div className="flex items-center">
-                                        <span className="text-4xl font-semibold mr-2">
-                                            1.5 - 3
-                                        </span>
-                                        <span className="block">Years Old</span>
-                                    </div>
+                                    <span className="text-4xl font-semibold">
+                                        0.5 - 12
+                                    </span>
+                                    <span className="block">Years Old</span>
                                 </div>
                             </div>
                             <div className="flex flex-col items-center justify-center mt-4 md:mt-0">
-                                <Image
+                                <img
                                     src="/logo.jpg"
                                     alt="images"
                                     height={200}
                                     width={200}
-                                    className="rounded-full mb-4"
+                                    className="w-full"
                                 />
                                 <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
                                     READ MORE
                                 </button>
                             </div>
                         </div>
-                        <div className="bg-[#56509f] flex flex-col md:flex-row p-4 rounded-lg shadow-lg text-white">
+
+                        {/* Summer Camp Card */}
+                        <div className="bg-[#56509f] flex flex-col md:flex-row py-4 pl-4 rounded-lg shadow-lg text-white">
                             <div className="flex-1">
                                 <h3 className="text-xl font-bold mb-2">
-                                    Pre-Montessori
+                                    Summer Camp
                                 </h3>
                                 <p className="italic mb-4">
-                                    (Equivalent to playgroup)
+                                    Creative Ideas, STEAM Challenges, Brain
+                                    Exercises, Life Skills, Rhythm & Beats,
+                                    Phonics, Dramatics, Mastering Manuscripts,
+                                    Self Defence, Outdoor Play
                                 </p>
                                 <div>
-                                    <div className="flex items-center mb-2">
-                                        <span className="text-4xl font-semibold mr-2">
-                                            12
-                                        </span>
-                                        <div>
-                                            <span className="block">
-                                                Class Size
-                                            </span>
-                                            <span className="block text-sm">
-                                                6 - 8 Covid Class Size
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div className="flex items-center">
-                                        <span className="text-4xl font-semibold mr-2">
-                                            1.5 - 3
-                                        </span>
-                                        <span className="block">Years Old</span>
-                                    </div>
+                                    <span className="text-4xl font-semibold">
+                                        Varies as per Activity
+                                    </span>
+                                    <span className="block">
+                                        3 - 12 Years Old
+                                    </span>
                                 </div>
                             </div>
-                            <div className="flex flex-col items-center justify-center mt-4 md:mt-0">
-                                <Image
+                            <div className="flex flex-col items-center justify-center  mt-4 md:mt-0">
+                                <img
                                     src="/logo.jpg"
                                     alt="images"
                                     height={200}
                                     width={200}
-                                    className="rounded-full mb-4"
+                                    className="w-full"
                                 />
                                 <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
                                     READ MORE
                                 </button>
                             </div>
                         </div>
-                        <div className="bg-[#56509f] col-span-1 md:col-span-2 flex flex-col md:flex-row justify-around items-center p-4 rounded-lg shadow-lg text-white">
-                            <div className="">
+
+                        {/* After-School Activity Club Card */}
+                        <div className="bg-[#56509f] col-span-1 md:col-span-2 flex flex-col md:flex-row py-4 pl-4 rounded-lg shadow-lg text-white">
+                            <div className="flex-1">
                                 <h3 className="text-xl font-bold mb-2">
-                                    Pre-Montessori
+                                    After-School Activity Club
                                 </h3>
                                 <p className="italic mb-4">
-                                    (Equivalent to playgroup)
+                                    Platform provides option of Tuition classes
+                                    (UKG - 5th), Dance, Bharatanatyam, Keyboard,
+                                    Martial Arts, Football, Chess, Drawing &
+                                    Painting, Abacus, CueMath, Explore Labs,
+                                    Board Games, Puzzles, Basketball, etc.
                                 </p>
                                 <div>
-                                    <div className="flex items-center mb-2">
-                                        <span className="text-4xl font-semibold mr-2">
-                                            12
-                                        </span>
-                                        <div>
-                                            <span className="block">
-                                                Class Size
-                                            </span>
-                                            <span className="block text-sm">
-                                                6 - 8 Covid Class Size
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div className="flex items-center">
-                                        <span className="text-4xl font-semibold mr-2">
-                                            1.5 - 3
-                                        </span>
-                                        <span className="block">Years Old</span>
-                                    </div>
+                                    <span className="text-4xl font-semibold">
+                                        Varies as per Activity
+                                    </span>
+                                    <span className="block">
+                                        3 - 12 Years Old
+                                    </span>
                                 </div>
                             </div>
-                            <div className="flex flex-col items-center justify-center mt-4 md:mt-0">
-                                <Image
+                            <div className="flex flex-col items-center justify-center md:mt-0">
+                                <img
                                     src="/logo.jpg"
                                     alt="images"
-                                    height={200}
-                                    width={200}
-                                    className="rounded-full mb-4"
+                                    height={300}
+                                    width={300}
+                                    className="w-full"
                                 />
                                 <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
                                     READ MORE
@@ -540,6 +524,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
             {/* 9.completed */}
             {/* Tick mark section */}
             <section className="bg-gray-50 p-10">
@@ -617,7 +602,7 @@ export default function Home() {
                             (A unit of Elements Educare Private Limited)
                         </p>
                     </div>
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-12">
+                    <div className="flex justify-center items-center gap-10 mb-12">
                         {contactDetails.map((detail, index) => (
                             <div
                                 key={index}

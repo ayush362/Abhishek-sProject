@@ -124,9 +124,9 @@ const page = () => {
 
             <section className="container mx-auto flex justify-center items-center py-20">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124367.10064066313!2d77.51924425928952!3d13.069251869694387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae21be4ad63a55%3A0x1008adb771c3d236!2sPresidency%20University!5e0!3m2!1sen!2sin!4v1722603747107!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.0744142371386!2d77.6760606!3d12.9029365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae136b681d1aff%3A0x994d339f68434e7d!2sKidzee%20Kasavanahalli!5e0!3m2!1sen!2sin!4v1723465063668!5m2!1sen!2sin"
                     width="1200"
-                    height="450"
+                    height="800"
                     // style="border:0;"
                     allowfullscreen=""
                     loading="lazy"

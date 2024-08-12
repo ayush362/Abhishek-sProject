@@ -13,7 +13,7 @@ const About = () => {
                         Explore our mission, locations, and historical milestones.
                     </p>
                 </div>
-                <div className="flex flex-col md:flex-row md:justify-between gap-10">
+                <div className="flex flex-col md:flex-row md:center gap-10">
                     <div className="flex-1 bg-white text-gray-800 p-8 rounded-lg shadow-lg">
                         <div className="mb-6">
                             <h3 className="text-3xl font-semibold text-purple-700 mb-4">
@@ -31,75 +31,6 @@ const About = () => {
                                 height={150}
                                 className="rounded-md"
                             />
-                        </div>
-                    </div>
-
-                    <div className="flex-1 bg-white text-gray-800 p-8 rounded-lg shadow-lg">
-                        <h3 className="text-3xl font-semibold text-purple-700 mb-6">
-                            Our Centers
-                        </h3>
-                        <ul className="list-disc list-inside space-y-4">
-                            <li>
-                                <a href="#" className="text-purple-600 hover:text-purple-800">
-                                    Kasavanahalli
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="text-purple-600 hover:text-purple-800">
-                                    Doddakannelli
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="mt-16">
-                    <h3 className="text-3xl font-semibold text-white text-center mb-6">
-                        Archives
-                    </h3>
-                    <div className="flex flex-wrap justify-center gap-8">
-                        <div className="bg-white text-gray-800 p-6 rounded-lg shadow-lg max-w-xs">
-                            <h4 className="text-2xl font-semibold text-purple-700 mb-2">
-                                March 2020
-                            </h4>
-                            <p className="text-lg">
-                                Highlights and key events from March 2020.
-                            </p>
-                            <a href="#" className="text-purple-600 hover:text-purple-800">
-                                Read More
-                            </a>
-                        </div>
-                        <div className="bg-white text-gray-800 p-6 rounded-lg shadow-lg max-w-xs">
-                            <h4 className="text-2xl font-semibold text-purple-700 mb-2">
-                                March 2019
-                            </h4>
-                            <p className="text-lg">
-                                Highlights and key events from March 2019.
-                            </p>
-                            <a href="#" className="text-purple-600 hover:text-purple-800">
-                                Read More
-                            </a>
-                        </div>
-                        <div className="bg-white text-gray-800 p-6 rounded-lg shadow-lg max-w-xs">
-                            <h4 className="text-2xl font-semibold text-purple-700 mb-2">
-                                February 2019
-                            </h4>
-                            <p className="text-lg">
-                                Highlights and key events from February 2019.
-                            </p>
-                            <a href="#" className="text-purple-600 hover:text-purple-800">
-                                Read More
-                            </a>
-                        </div>
-                        <div className="bg-white text-gray-800 p-6 rounded-lg shadow-lg max-w-xs">
-                            <h4 className="text-2xl font-semibold text-purple-700 mb-2">
-                                March 2018
-                            </h4>
-                            <p className="text-lg">
-                                Highlights and key events from March 2018.
-                            </p>
-                            <a href="#" className="text-purple-600 hover:text-purple-800">
-                                Read More
-                            </a>
                         </div>
                     </div>
                 </div>
