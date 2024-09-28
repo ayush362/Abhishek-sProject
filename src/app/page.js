@@ -10,6 +10,7 @@ import { fadeImages } from "@/data/fadeImages";
 import { programs } from "@/data/programs";
 import { features } from "@/data/features";
 import { hoursDetails } from "@/data/hoursDetails";
+import axios from "axios";
 import Image from "next/image";
 const divStyle = {
     display: "flex",
@@ -20,6 +21,34 @@ const divStyle = {
 };
 
 export default function Home() {
+    function Submit(e) {
+        e.preventDefault(); // Prevent form from reloading the page
+
+        // Get the form element
+        const formEle = document.querySelector("form");
+        const formData = new FormData(formEle); // Collect form data
+
+        // Log the FormData object
+        console.log("FormData:", formData);
+
+        axios
+            .post(
+                "https://script.google.com/macros/s/AKfycbyn9TdWHpAwWxZ5lsm5YJ54cE5-OYsUn9G-HIayb5PZ10fcQepIM99Q7AAYq3cw3iEA/exec",
+                formData,
+                {
+                    headers: {
+                        "Content-Type": "formData", // Set content type for FormData
+                    },
+                }
+            )
+            .then((response) => {
+                console.log("Response data:", response.data);
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
+    }
+
     return (
         <>
             {/* 1.Finished */}
@@ -42,115 +71,6 @@ export default function Home() {
                     </Fade>
                 </div>
             </section>
-            {/* 2.Finished */}
-            {/* Learn More Section */}
-            {/* <section className="bgOne text-white py-20 px-5">
-                <div className="container mx-auto flex flex-col md:flex-row justify-center gap-10 items-center">
-                    <div className="md:w-2/3">
-                        <p className="text-4xl">
-                            Consistently among Top Preschools in India since
-                            2015 Outstanding Educator in Early Years in India -
-                            Dec 2020
-                        </p>
-                    </div>
-                    <div className="md:w-1/3">
-                        <a
-                            href="#"
-                            className="border-white border-2 p-5 hover:bg-white  hover:text-black"
-                        >
-                            Learn More
-                        </a>
-                    </div>
-                </div>
-            </section> */}
-            {/* 3.completed */}
-            {/* Kidzee Kasavanahalli kids section */}
-            {/* <section className="container mx-auto py-10">
-                <h2 className="text-center text-5xl">
-                    Welcome to Kidzee Kasavanahalli Kids
-                </h2>
-                <div className="flex flex-col md:flex-row justify-center gap-10 py-10 px-5">
-                    <div className="slide-container md:w-1/3">
-                        <h2 className="text-center mb-5">Kasavahalli Center</h2>
-                        <div className="flex gap-5 justify-center items-center mb-5">
-                            <a
-                                href="#"
-                                className="bg-orange-600 text-white hover:bg-purple-700 rounded-2xl py-1 px-2"
-                            >
-                                SEE MAP{" "}
-                            </a>
-                            <a
-                                href="#"
-                                className="bg-orange-600 text-white hover:bg-purple-700 rounded-2xl py-1 px-2"
-                            >
-                                VIRTUAL TOUR
-                            </a>
-                        </div>
-                        <Slide>
-                            {slideImages.map((slideImage, index) => (
-                                <div key={index}>
-                                    <div
-                                        style={{
-                                            ...divStyle,
-                                            backgroundImage: `url(${slideImage.url})`,
-                                        }}
-                                        className="rounded-2xl"
-                                    ></div>
-                                </div>
-                            ))}
-                        </Slide>
-                    </div>
-                    <div className="slide-container md:w-1/3">
-                        <h2 className="text-center mb-5">
-                            Doddakanneli Center
-                        </h2>
-                        <div className="flex gap-5 justify-center items-center mb-5">
-                            <a
-                                href="#"
-                                className="bg-orange-600 text-white hover:bg-purple-700 rounded-2xl py-1 px-2"
-                            >
-                                SEE MAP{" "}
-                            </a>
-                            <a
-                                href="#"
-                                className="bg-orange-600 text-white hover:bg-purple-700 rounded-2xl py-1 px-2"
-                            >
-                                VIRTUAL TOUR
-                            </a>
-                        </div>
-                        <Slide>
-                            {slideImages.map((slideImage, index) => (
-                                <div key={index}>
-                                    <div
-                                        style={{
-                                            ...divStyle,
-                                            backgroundImage: `url(${slideImage.url})`,
-                                        }}
-                                        className="rounded-2xl"
-                                    ></div>
-                                </div>
-                            ))}
-                        </Slide>
-                    </div>
-                </div>
-            </section> */}
-            {/* 4.completed */}
-            {/* <section className="bgOne p-5">
-                <div className="flex flex-col md:flex-row gap-5 justify-center items-center">
-                    <a
-                        href="#"
-                        className="text-white bg-orange-600 hover:bg-purple-500 py-5 px-3"
-                    >
-                        BOOK VIRTUAL/CAMPUS APPOINTMENT
-                    </a>
-                    <a
-                        href="#"
-                        className="text-white bg-orange-600 hover:bg-purple-500 py-5 px-3"
-                    >
-                        BOOK VIRTUAL/CAMPUS APPOINTMENT
-                    </a>
-                </div>
-            </section> */}
             {/* 5.completed */}
             {/* Enquiry Form */}
             <section>
@@ -160,7 +80,10 @@ export default function Home() {
                         <p className="mt-2 mb-5">
                             Fill the form for any Queries
                         </p>
-                        <form style={{ maxWidth: "600px", margin: "0 auto" }}>
+                        <form
+                            style={{ maxWidth: "600px", margin: "0 auto" }}
+                            onSubmit={(e) => Submit(e)}
+                        >
                             <div
                                 style={{
                                     display: "flex",
@@ -172,12 +95,14 @@ export default function Home() {
                                     className="border border-gray-200"
                                     type="text"
                                     placeholder="Your Name *"
+                                    name="Name"
                                     style={{ width: "48%", padding: "0.5rem" }}
                                 />
                                 <input
                                     className="border border-gray-200"
                                     type="text"
                                     placeholder="Phone Number *"
+                                    name="Phone"
                                     style={{ width: "48%", padding: "0.5rem" }}
                                 />
                             </div>
@@ -192,22 +117,25 @@ export default function Home() {
                                     className="border border-gray-200"
                                     type="email"
                                     placeholder="Your E-mail *"
+                                    name="Email"
                                     style={{ width: "48%", padding: "0.5rem" }}
                                 />
                                 <input
                                     className="border border-gray-200"
                                     type="text"
                                     placeholder="Subject"
+                                    name="Subject"
                                     style={{ width: "48%", padding: "0.5rem" }}
                                 />
                             </div>
                             <div style={{ marginBottom: "1rem" }}>
-                                <textarea
+                                <input
                                     className="border border-gray-200"
                                     placeholder="Your Message *"
+                                    name="Message"
                                     style={{ width: "100%", padding: "0.5rem" }}
                                     rows="4"
-                                ></textarea>
+                                ></input>
                             </div>
                             <button
                                 type="submit"
@@ -283,11 +211,11 @@ export default function Home() {
                             Focus on What is Right for the Child
                         </h3>
                         <p className="text-gray-700">
-                            Children at Kidzee Kasavanahalli Kids follow a regimen which
-                            inculcates discipline in them while at the same time
-                            providing them with enough freedom of imagination
-                            and expression; freedom which is within the
-                            boundaries of discipline.
+                            Children at Kidzee Kasavanahalli Kids follow a
+                            regimen which inculcates discipline in them while at
+                            the same time providing them with enough freedom of
+                            imagination and expression; freedom which is within
+                            the boundaries of discipline.
                         </p>
                     </div>
                     <div className="flex flex-col items-center text-center">
@@ -586,7 +514,8 @@ export default function Home() {
                             Contact Us
                         </h3>
                         <p className="text-base text-gray-400 mt-2">
-                            (A unit of Kidzee Kasavanahalli Educare Private Limited)
+                            (A unit of Kidzee Kasavanahalli Educare Private
+                            Limited)
                         </p>
                     </div>
                     <div className="flex justify-center items-center gap-10 mb-12">
@@ -625,7 +554,7 @@ export default function Home() {
                                 <p className="text-gray-700">
                                     Map:{" "}
                                     <a
-                                        href={detail.map}
+                                        href={detail.mapLink}
                                         className="text-purple-500 underline"
                                     >
                                         {detail.map}

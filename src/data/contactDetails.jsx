@@ -2,10 +2,11 @@ export const contactDetails = [
     {
         title: "Kasavanahalli Center",
         address:
-            "13, Owners Court West, Kasavanahalli, Off Sarjapur Road, Bangalore - 560 035",
-        email: "info01@Kidzee Kasavanahallikids.com",
-        phone: "99028 74928",
+            "House no: 108, 19th Cross Rd, opposite to SJR VERITY, Tulasi Layout, apartment, Bengaluru, Karnatak 560035",
+        email: "contactkidzeekasavanahalli@gmail.com",
+        phone: "8884750750",
         map: "View Map",
+        mapLink:"https://maps.app.goo.gl/n72XbqVQP74bqDC39",
         icon: (
             <svg
                 className="h-6 w-6 text-orange-500"

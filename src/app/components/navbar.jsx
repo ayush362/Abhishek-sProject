@@ -82,7 +82,7 @@ const Navbar = () => {
                             onMouseLeave={toggleSubMenu}
                         >
                             <a
-                                href="/playgroup"
+                                href="#"
                                 className={`p-5 ${
                                     ["/playgroup", "/kindergarten", "/nursery"].includes(
                                         currentPath

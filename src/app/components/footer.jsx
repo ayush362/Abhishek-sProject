@@ -34,7 +34,7 @@ const Footer = () => {
             <div>
                 <p className="text-center">
                     {" "}
-                    Copyrights © 2020 Kidzee Kasavanahalli Kids, All Rights Reserved.{" "}
+                    Copyrights © 2020 Kidzee Kasavanahalli, All Rights Reserved.{" "}
                 </p>
             </div>
         </footer>
